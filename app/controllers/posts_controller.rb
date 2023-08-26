@@ -8,9 +8,8 @@ class PostsController < ApplicationController
 
   def show
     post = Post.find(params[:id])
-    render json: post
+    render json: post 
   end
-
   private
 
   def render_not_found_response
